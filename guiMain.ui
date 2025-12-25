@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1204</width>
+    <width>1220</width>
     <height>953</height>
    </rect>
   </property>
@@ -446,8 +446,8 @@ background-color: transparent;</string>
    <widget class="QTableView" name="csvFile">
     <property name="geometry">
      <rect>
-      <x>850</x>
-      <y>20</y>
+      <x>840</x>
+      <y>30</y>
       <width>321</width>
       <height>231</height>
      </rect>
@@ -484,6 +484,165 @@ QTableView QLineEdit {
 }
 </string>
     </property>
+   </widget>
+   <widget class="QGroupBox" name="ColorOverrideButtonsBox">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>280</y>
+      <width>231</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+	border: 2px solid rgb(227, 30, 3);
+	border-radius: 10px;
+	margin-top: 0.5ex;
+	font-size: 24px;
+	font-weight: bold;
+	font: 700 20pt &quot;Uroob&quot;;
+}
+
+QGroupBox::title {
+	color: rgb(227, 30, 3);
+	subcontrol-origin: margin;
+	subcontrol-position: top-left;
+	padding: 0 10px;
+	font-weight: bold;
+}</string>
+    </property>
+    <property name="title">
+     <string>Color Overrides</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="redButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(246, 11, 11);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>RED</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="blueButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(19, 135, 242);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>BLUE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="purpleButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(192, 97, 203);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>PURPLE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="orangeButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(255, 120, 0);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>ORANGE</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="yellowButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(249, 240, 107);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>YELLOW</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="greenButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: rgb(0, 255, 0);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>GREEN</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

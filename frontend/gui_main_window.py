@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'guiMain.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.9.2
+## Created by: Qt User Interface Compiler version 6.10.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -28,7 +28,7 @@ class Ui_guiMainWindow(object):
     def setupUi(self, guiMainWindow):
         if not guiMainWindow.objectName():
             guiMainWindow.setObjectName(u"guiMainWindow")
-        guiMainWindow.resize(1204, 953)
+        guiMainWindow.resize(1220, 953)
         guiMainWindow.setStyleSheet(u"background-color: rgb(24, 24, 29);")
         self.centralwidget = QWidget(guiMainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -310,7 +310,7 @@ class Ui_guiMainWindow(object):
         self.webEngineView.setUrl(QUrl(u"about:blank"))
         self.csvFile = QTableView(self.centralwidget)
         self.csvFile.setObjectName(u"csvFile")
-        self.csvFile.setGeometry(QRect(850, 20, 321, 231))
+        self.csvFile.setGeometry(QRect(840, 30, 321, 231))
         self.csvFile.setStyleSheet(u"QTableView {            \n"
 "    gridline-color: transparent;        /* Grid lines between cells */\n"
 "    selection-color: rgb(119, 118, 123);          /* Selected cell text */\n"
@@ -341,6 +341,129 @@ class Ui_guiMainWindow(object):
 "    selection-background-color: #ff6b6b;\n"
 "}\n"
 "")
+        self.ColorOverrideButtonsBox = QGroupBox(self.centralwidget)
+        self.ColorOverrideButtonsBox.setObjectName(u"ColorOverrideButtonsBox")
+        self.ColorOverrideButtonsBox.setGeometry(QRect(840, 280, 231, 181))
+        self.ColorOverrideButtonsBox.setStyleSheet(u"QGroupBox {\n"
+"	border: 2px solid rgb(227, 30, 3);\n"
+"	border-radius: 10px;\n"
+"	margin-top: 0.5ex;\n"
+"	font-size: 24px;\n"
+"	font-weight: bold;\n"
+"	font: 700 20pt \"Uroob\";\n"
+"}\n"
+"\n"
+"QGroupBox::title {\n"
+"	color: rgb(227, 30, 3);\n"
+"	subcontrol-origin: margin;\n"
+"	subcontrol-position: top-left;\n"
+"	padding: 0 10px;\n"
+"	font-weight: bold;\n"
+"}")
+        self.gridLayout_2 = QGridLayout(self.ColorOverrideButtonsBox)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.redButton = QPushButton(self.ColorOverrideButtonsBox)
+        self.redButton.setObjectName(u"redButton")
+        self.redButton.setStyleSheet(u"QPushButton {\n"
+"    background-color: rgb(246, 11, 11);\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 6px 12px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"")
+
+        self.gridLayout_2.addWidget(self.redButton, 0, 0, 1, 1)
+
+        self.blueButton = QPushButton(self.ColorOverrideButtonsBox)
+        self.blueButton.setObjectName(u"blueButton")
+        self.blueButton.setStyleSheet(u"QPushButton {\n"
+"    background-color: rgb(19, 135, 242);\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 6px 12px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"")
+
+        self.gridLayout_2.addWidget(self.blueButton, 2, 0, 1, 1)
+
+        self.purpleButton = QPushButton(self.ColorOverrideButtonsBox)
+        self.purpleButton.setObjectName(u"purpleButton")
+        self.purpleButton.setStyleSheet(u"QPushButton {\n"
+"    background-color: rgb(192, 97, 203);\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 6px 12px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"")
+
+        self.gridLayout_2.addWidget(self.purpleButton, 2, 1, 1, 1)
+
+        self.orangeButton = QPushButton(self.ColorOverrideButtonsBox)
+        self.orangeButton.setObjectName(u"orangeButton")
+        self.orangeButton.setStyleSheet(u"QPushButton {\n"
+"    background-color: rgb(255, 120, 0);\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 6px 12px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"")
+
+        self.gridLayout_2.addWidget(self.orangeButton, 0, 1, 1, 1)
+
+        self.yellowButton = QPushButton(self.ColorOverrideButtonsBox)
+        self.yellowButton.setObjectName(u"yellowButton")
+        self.yellowButton.setStyleSheet(u"QPushButton {\n"
+"    background-color: rgb(249, 240, 107);\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 6px 12px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"")
+
+        self.gridLayout_2.addWidget(self.yellowButton, 1, 0, 1, 1)
+
+        self.greenButton = QPushButton(self.ColorOverrideButtonsBox)
+        self.greenButton.setObjectName(u"greenButton")
+        self.greenButton.setStyleSheet(u"QPushButton {\n"
+"    background-color: rgb(0, 255, 0);\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 6px 12px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"")
+
+        self.gridLayout_2.addWidget(self.greenButton, 1, 1, 1, 1)
+
         guiMainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(guiMainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -373,5 +496,12 @@ class Ui_guiMainWindow(object):
         self.KillSwitchButton.setText(QCoreApplication.translate("guiMainWindow", u"Kill", None))
         self.FrontRightEncoderText.setText(QCoreApplication.translate("guiMainWindow", u"0", None))
         self.BackRightEncoderText.setText(QCoreApplication.translate("guiMainWindow", u"0", None))
+        self.ColorOverrideButtonsBox.setTitle(QCoreApplication.translate("guiMainWindow", u"Color Overrides", None))
+        self.redButton.setText(QCoreApplication.translate("guiMainWindow", u"RED", None))
+        self.blueButton.setText(QCoreApplication.translate("guiMainWindow", u"BLUE", None))
+        self.purpleButton.setText(QCoreApplication.translate("guiMainWindow", u"PURPLE", None))
+        self.orangeButton.setText(QCoreApplication.translate("guiMainWindow", u"ORANGE", None))
+        self.yellowButton.setText(QCoreApplication.translate("guiMainWindow", u"YELLOW", None))
+        self.greenButton.setText(QCoreApplication.translate("guiMainWindow", u"GREEN", None))
     # retranslateUi
 
